@@ -1,0 +1,40 @@
+<!Doctype>
+<html>
+<head>
+</head>
+<body>
+<script>
+
+    function myInteger(number){
+
+    let integer = [];
+    
+    for(let i = 1; i <= number; i++){
+        if (i % 2 === 0){
+            integer.push("yu");
+        }else if (i % 3 === 0){
+            integer.push("gi");
+        }else if (i % 5 === 0){
+            integer.push("oh");
+        }else if (i % 2 === 0 && i % 3 === 0 && i % 5 === 0){
+            integer.push("yu-gi-oh");
+        }else if (i % 2 === 0 && i % 3 === 0){
+            integer.push("yu-gi");
+        }else if(i % 2 === 0 && i % 5 === 0){
+            integer.push("yu-oh");
+        }else if (i % 3 === 0 && i % 5 === 0){
+            integer.push("gi-oh");
+        }else{
+            integer.push(i);
+        }
+    }
+    
+    console.log(integer);
+    return integer;
+}
+      myInteger(100);
+      myInteger(15);
+
+</script>
+</body>
+</html>
